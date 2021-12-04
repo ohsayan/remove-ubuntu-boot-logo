@@ -1,0 +1,8 @@
+#!/bin/sh
+
+apt-get install wget -y
+wget https://raw.githubusercontent.com/ohsayan/remove-ubuntu-boot-logo/next/ubuntu-logo.png
+mv /usr/share/plymouth/ubuntu-logo.png /usr/share/plymouth/ubuntu-logo.png.bak
+cp ubuntu-logo.png /usr/share/plymouth/ubuntu-logo.png
+update-initramfs -u
+update-grub
