@@ -1,4 +1,4 @@
-# Remove Ubuntu branding on splash
+# Remove Ubuntu branding from boot and login
 
 Use Ubuntu? Don't like the splash with your manufacturer name and the Ubuntu logo? Don't like the Ubuntu logo on the login screen? Well, I hear you!
 
@@ -6,19 +6,19 @@ This repo provides two extremely simple scripts: `remove` and `restore` to remov
 
 ## Removing the Ubuntu logo
 
-Steps:
-1. Clone this repository
-2. Run `chmod +x remove`
-3. Run `sudo ./remove`
-4. Reboot and enjoy!
+Run this:
+
+```sh
+curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/ohsayan/remove-ubuntu-boot-logo/next/remove | sh
+```
 
 ## Restoring the Ubuntu logo
 
-Steps:
-1. Clone this repository (if you haven't already)
-2. Run `chmod +x restore`
-3. Run `sudo ./restore`
-4. Reboot and enjoy!
+Run this:
+
+```sh
+curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/ohsayan/remove-ubuntu-boot-logo/next/restore | sh
+```
 
 ## License
 

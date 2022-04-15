@@ -1,5 +1,4 @@
 #!/bin/sh
-
-mv /usr/share/plymouth/ubuntu-logo.png.bak /usr/share/plymouth/ubuntu-logo.png
-update-initramfs -u
-update-grub
+sudo mv /usr/share/plymouth/ubuntu-logo.png.bak /usr/share/plymouth/ubuntu-logo.png
+sudo update-initramfs -u
+sudo update-grub
